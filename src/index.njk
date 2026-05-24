@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+title: Skyloft Labs — AI Agents, Apps & Consulting
+description: We build AI agents and applications, and deliver AI software consulting projects.
+---
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="badge reveal">AI Agents • AI Applications • AI Consulting</div>
+    <h1 class="headline reveal">Production-grade AI that ships.</h1>
+    <p class="subhead reveal">
+      We build AI agents and applications for real workflows—plus consulting to help teams deliver AI software safely and reliably.
+    </p>
+    <div class="cta-row reveal">
+      <a class="btn primary" href="/pages/contact/">Talk to us</a>
+      <a class="btn ghost" href="/pages/products/">See products</a>
+    </div>
+    <div class="trust reveal">
+      <span class="muted">Fast prototypes → hardened systems</span><span class="dot">•</span>
+      <span class="muted">Security-conscious delivery</span><span class="dot">•</span>
+      <span class="muted">Measurable outcomes</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title reveal">What we do</h2>
+    {% set items = [
+      {"title":"AI Agents","body":"Task automation, tool use, multi-step workflows, retrieval, and guardrails."},
+      {"title":"AI Applications","body":"Customer-facing and internal copilots, search, summarization, and triage."},
+      {"title":"AI Consulting","body":"Discovery → architecture → delivery. We help teams ship AI software successfully."}
+    ] %}
+    {% include "components/featureGrid.njk" %}
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <h2 class="section-title reveal">Explore by niche</h2>
+    <div class="grid-3">
+      {% for n in niches %}
+        <a class="card link-card reveal" href="/pages/niches/{{ n.slug }}/">
+          <h3>{{ n.name }}</h3>
+          <p class="muted">{{ n.summary }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% include "components/cta.njk" %}
+  </div>
+</section>

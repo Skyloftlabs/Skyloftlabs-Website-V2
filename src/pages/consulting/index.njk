@@ -1,0 +1,19 @@
+---
+layout: layouts/page.njk
+title: Consulting
+---
+
+<h1>Consulting</h1>
+<p class="muted">AI software consulting from discovery to production deployment.</p>
+
+<div class="grid-3">
+  {% for c in consulting %}
+    <a class="card link-card reveal" href="/pages/consulting/{{ c.slug }}/">
+      <h3>{{ c.name }}</h3>
+      <p class="muted">{{ c.summary }}</p>
+      <p class="pill">Category: {{ c.category }}</p>
+    </a>
+  {% endfor %}
+</div>
+
+{% include "components/cta.njk" %}

@@ -1,0 +1,28 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: niches
+  size: 1
+  alias: niche
+permalink: "/pages/niches/{{ niche.slug }}/index.html"
+title: "{{ niche.name }}"
+---
+
+<h1>{{ niche.name }}</h1>
+<p class="muted">{{ niche.summary }}</p>
+
+<h2>Products</h2>
+<ul>
+  {% for ps in niche.productSlugs %}
+    <li><a href="/pages/products/{{ ps }}/">{{ ps }}</a></li>
+  {% endfor %}
+</ul>
+
+<h2>Consulting</h2>
+<ul>
+  {% for cs in niche.consultingSlugs %}
+    <li><a href="/pages/consulting/{{ cs }}/">{{ cs }}</a></li>
+  {% endfor %}
+</ul>
+
+{% include "components/cta.njk" %}

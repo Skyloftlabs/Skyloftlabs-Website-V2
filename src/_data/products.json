@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "soc-agent",
+    "name": "SOC AI Agent",
+    "category": "cybersecurity",
+    "summary": "AI agent for security operations triage, investigation assistance, and alert prioritization.",
+    "features": [
+      "Alert triage automation",
+      "Investigation summarization",
+      "Runbook execution"
+    ],
+    "cta": {
+      "label": "Request a demo",
+      "url": "/pages/contact/"
+    }
+  },
+  {
+    "slug": "phishing-triage",
+    "name": "Phishing Triage AI",
+    "category": "cybersecurity",
+    "summary": "Automated phishing analysis, classification, and response suggestions.",
+    "features": [
+      "Email classification",
+      "Threat scoring",
+      "Response automation suggestions"
+    ],
+    "cta": {
+      "label": "Talk to us",
+      "url": "/pages/contact/"
+    }
+  }
+]

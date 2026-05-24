@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ title or site.name }}</title>
+  <meta name="description" content="{{ description or site.tagline }}" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/pages.css" />
+  <script defer src="/assets/js/animate.js"></script>
+  {# Turnstile script is safe to include even if you don't enable Turnstile yet #}
+  <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+</head>
+<body>
+  {% include "components/nav.njk" %}
+  <main>
+    {{ content | safe }}
+  </main>
+  {% include "components/footer.njk" %}
+</body>
+</html>

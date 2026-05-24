@@ -1,0 +1,10 @@
+.hero{position:relative;overflow:hidden;padding:86px 0 56px}
+.hero-inner{position:relative}
+.hero-bg{position:absolute;inset:-200px -200px auto -200px;height:520px;background:radial-gradient(closest-side, rgba(124,92,255,.22), transparent 70%),radial-gradient(closest-side, rgba(25,211,255,.18), transparent 60%);filter: blur(18px)}
+.badge{display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);font-size:13px}
+.headline{font-size:56px;line-height:1.02;margin:14px 0 10px;letter-spacing:-.7px}
+.subhead{font-size:18px;line-height:1.6;max-width:760px;color:var(--muted)}
+.trust{margin-top:18px;display:flex;align-items:center;flex-wrap:wrap}
+.dot{opacity:.5;margin:0 .5rem}
+.section-title{font-size:28px;margin:0 0 18px}
+@media (max-width: 900px){.headline{font-size:40px}}

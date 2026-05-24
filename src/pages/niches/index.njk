@@ -1,0 +1,18 @@
+---
+layout: layouts/page.njk
+title: Niches
+---
+
+<h1>Niches</h1>
+<p class="muted">Industry-specific AI product and consulting offerings.</p>
+
+<div class="grid-3">
+  {% for n in niches %}
+    <a class="card link-card reveal" href="/pages/niches/{{ n.slug }}/">
+      <h3>{{ n.name }}</h3>
+      <p class="muted">{{ n.summary }}</p>
+    </a>
+  {% endfor %}
+</div>
+
+{% include "components/cta.njk" %}

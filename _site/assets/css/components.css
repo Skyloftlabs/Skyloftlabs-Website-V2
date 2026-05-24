@@ -1,0 +1,33 @@
+.nav{position:sticky;top:0;z-index:50;background:rgba(7,10,18,.65);backdrop-filter: blur(10px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.brand{font-weight:900;text-decoration:none;letter-spacing:.2px}
+.links{display:flex;gap:14px;align-items:center}
+.link{text-decoration:none;opacity:.9}
+.link:hover{opacity:1}
+.link.cta{padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#06101a;font-weight:800}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;border:1px solid var(--border);text-decoration:none;transition:transform .15s ease, border-color .2s ease}
+.btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.18)}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand2));border:none;color:#06101a;font-weight:800}
+.btn.ghost{background:transparent}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width: 900px){.grid-3{grid-template-columns:1fr}}
+
+.card{background:rgba(15,23,48,.72);border:1px solid var(--border);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+.link-card{text-decoration:none;display:block}
+
+.pill{display:inline-block;margin-top:10px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);font-size:12px}
+
+.footer{padding:44px 0;border-top:1px solid var(--border);background:rgba(255,255,255,.02)}
+.footer-grid{display:grid;gap:18px;grid-template-columns:2fr 1fr 1fr}
+.footer-title{font-weight:900;margin-bottom:8px}
+.footer-bottom{margin-top:18px;opacity:.8}
+@media (max-width: 900px){.footer-grid{grid-template-columns:1fr}}
+
+.cta-box{padding:22px;border-radius:20px;background:linear-gradient(135deg, rgba(124,92,255,.18), rgba(25,211,255,.12));border:1px solid var(--border)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+
+.form{display:flex;flex-direction:column;gap:10px}
+.label{font-weight:700}
+.input,.textarea{padding:12px;border-radius:12px;border:1px solid var(--border);background:#070A12;color:var(--text)}

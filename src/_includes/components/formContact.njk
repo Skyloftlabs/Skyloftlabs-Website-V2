@@ -1,0 +1,19 @@
+<form class="form" method="POST" action="/api/submit">
+  <label class="label">Name</label>
+  <input class="input" name="name" autocomplete="name" required />
+
+  <label class="label">Email</label>
+  <input class="input" type="email" name="email" autocomplete="email" required />
+
+  <label class="label">Company (optional)</label>
+  <input class="input" name="company" autocomplete="organization" />
+
+  <label class="label">Message</label>
+  <textarea class="textarea" name="message" rows="6" required></textarea>
+
+  {# Turnstile will render only if you add a real sitekey below. #}
+  <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY" data-theme="auto"></div>
+
+  <button class="btn primary" type="submit">Send</button>
+  <p class="muted small">Or email <a href="mailto:{{ site.emails.sales }}">{{ site.emails.sales }}</a></p>
+</form>

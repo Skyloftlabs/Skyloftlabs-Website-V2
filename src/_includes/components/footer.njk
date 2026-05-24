@@ -1,0 +1,29 @@
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-title">{{ site.name }}</div>
+      <p class="muted">{{ site.tagline }}</p>
+      <p class="muted">Owned by {{ site.owner }}</p>
+    </div>
+    <div>
+      <div class="footer-title">Contact</div>
+      <p class="muted">
+        <a href="mailto:{{ site.emails.sales }}">{{ site.emails.sales }}</a><br/>
+        <a href="mailto:{{ site.emails.support }}">{{ site.emails.support }}</a><br/>
+        <a href="mailto:{{ site.emails.help }}">{{ site.emails.help }}</a>
+      </p>
+    </div>
+    <div>
+      <div class="footer-title">Links</div>
+      <p class="muted">
+        <a href="/pages/products/">Products</a><br/>
+        <a href="/pages/consulting/">Consulting</a><br/>
+        <a href="/pages/niches/">Niches</a><br/>
+        <a href="/pages/contact/">Contact</a>
+      </p>
+    </div>
+  </div>
+  <div class="container footer-bottom muted">
+    ©  {{site.name }}
+  </div>
+</footer>

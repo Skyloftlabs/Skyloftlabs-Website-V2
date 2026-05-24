@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "cybersecurity",
+    "name": "Cybersecurity",
+    "summary": "AI products and consulting for security operations, triage, and automation.",
+    "productSlugs": [
+      "soc-agent",
+      "phishing-triage"
+    ],
+    "consultingSlugs": [
+      "secure-ai-architecture",
+      "llm-eval-guardrails"
+    ]
+  }
+]

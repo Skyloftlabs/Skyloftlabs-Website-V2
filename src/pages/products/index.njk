@@ -1,0 +1,19 @@
+---
+layout: layouts/page.njk
+title: Products
+---
+
+<h1>Products</h1>
+<p class="muted">AI agents and applications designed to ship.</p>
+
+<div class="grid-3">
+  {% for p in products %}
+    <a class="card link-card reveal" href="/pages/products/{{ p.slug }}/">
+      <h3>{{ p.name }}</h3>
+      <p class="muted">{{ p.summary }}</p>
+      <p class="pill">Category: {{ p.category }}</p>
+    </a>
+  {% endfor %}
+</div>
+
+{% include "components/cta.njk" %}

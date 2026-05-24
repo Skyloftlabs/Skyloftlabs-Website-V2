@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "secure-ai-architecture",
+    "name": "Secure AI Architecture",
+    "category": "cybersecurity",
+    "summary": "Design secure AI systems with proper isolation, guardrails, and auditability.",
+    "outcomes": [
+      "Threat modeling for AI systems",
+      "Secure deployment patterns",
+      "Data governance strategy"
+    ],
+    "cta": {
+      "label": "Get a proposal",
+      "url": "/pages/contact/"
+    }
+  },
+  {
+    "slug": "llm-eval-guardrails",
+    "name": "LLM Evaluation & Guardrails",
+    "category": "cybersecurity",
+    "summary": "Implement evaluation frameworks and safety guardrails for production AI.",
+    "outcomes": [
+      "Evaluation pipelines",
+      "Red-teaming workflows",
+      "Hallucination mitigation strategies"
+    ],
+    "cta": {
+      "label": "Contact us",
+      "url": "/pages/contact/"
+    }
+  }
+]

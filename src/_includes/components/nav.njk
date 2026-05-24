@@ -1,0 +1,10 @@
+<header class="nav">
+  <div class="nav-inner container">
+    <a class="brand" href="/">{{ site.name }}</a>
+    <nav class="links" aria-label="Primary">
+      {% for item in navigation %}
+        <a class="link{% if item.cta %} cta{% endif %}" href="{{ item.url }}">{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

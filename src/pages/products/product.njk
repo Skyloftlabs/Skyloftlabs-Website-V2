@@ -1,0 +1,26 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: products
+  size: 1
+  alias: product
+permalink: "/pages/products/{{ product.slug }}/index.html"
+title: "{{ product.name }}"
+---
+
+<h1>{{ product.name }}</h1>
+<p class="muted">{{ product.summary }}</p>
+
+{% if product.features %}
+  <h2>Features</h2>
+  <ul>
+    {% for f in product.features %}
+      <li>{{ f }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+<div class="cta-row" style="margin-top: 24px;">
+  <a class="btn primary" href="{{ product.cta.url }}">{{ product.cta.label }}</a>
+  <a class="btn ghost" href="/pages/products/">Back to products</a>
+</div>

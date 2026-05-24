@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Products",
+    "url": "/pages/products/"
+  },
+  {
+    "label": "Consulting",
+    "url": "/pages/consulting/"
+  },
+  {
+    "label": "Niches",
+    "url": "/pages/niches/"
+  },
+  {
+    "label": "Pricing",
+    "url": "/pages/pricing/"
+  },
+  {
+    "label": "About",
+    "url": "/pages/about/"
+  },
+  {
+    "label": "Contact",
+    "url": "/pages/contact/",
+    "cta": true
+  }
+]
